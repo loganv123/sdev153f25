@@ -1,21 +1,41 @@
-body { background-color: #FFFFFF; 
+body { background-color: #90C7E3; 
        color: #666666;
+       	background-repeat: no-repeat;
+	background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);
        font-family: Arial, Verdana, sans-serif; }
 header { background-color: #002171; 
+        background-image: url(sunset.jpg);
+ background-position: right; 
+ background-repeat: no-repeat;
+ height: 72px;
        color: #FFFFFF;
        font-family: Georgia, sans-serif; }
- h1 { line-height: 200%;    }
+main { padding-left: 2em; padding-right: 2em;
+display: block;}
+ h1 { padding-top: 0.5em; 
+text-align: center;   }
 h2 { color: #1976D2; 
 	 font-family: Georgia, serif;}
+h3 { font-family: Georgia, serif;}
 nav { font-weight: bold;
-        background-color: #BBDEFB;}
+        text-align: center;
+padding-top: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em;}
 dt { color: #002171;
 	font-weight: bold; }
 .resort { color: #1976D2;
         font-size: 1.2em; }
 footer { text-align: center;
+        padding: 1em;
          font-size: .70em;
          font-style: italic; }
 #wrapper { margin-left: auto;
            margin-right: auto;
-           width: 80%; }
+           width: 80%;
+        background-color: #FFFFFF;
+min-width: 980px;
+max-width: 2048px;
+box-shadow: 5px 5px 5px #1E1E1E; }
+#yurthero { height: 300px; background: url(yurt.jpg) no-repeat; background-size: 100% 100%;}
+#homehero { background: url(coast.jpg) no-repeat; height: 300px; background-size: 100% 100%;}
+#trailhero { background: url(trail.jpg) no-repeat; height: 300px; background-size: 100% 100%;}
+nav a { text-decoration: none; }
