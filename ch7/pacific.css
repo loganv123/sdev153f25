@@ -79,7 +79,8 @@ letter-spacing: 0.25em;}
         border-bottom: none; }
  section {padding-left: 2em; padding-right: 2em;
         }
- #flow {flex-direction: row;}
+ #flow {flex-direction: row;
+display: flex;}
 
  #mobile {display: none;}
  #desktop {display: inline;}
