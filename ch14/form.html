@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Yurt Package Total Cost</title>
+  <meta charset="utf-8">
+<style>
+input { display: block;
+        margin-bottom: 1em;
+        }
+label { float: left;
+        width: 5em;
+		padding-right: 1em;
+        text-align: right; 
+}
+input[type="submit"]  { margin-left: 7em; }		
+</style>
+<script>
+function validateForm() {
+        var cost1 = document.getElementById("userCost1").value;
+        var cost2 = document.getElementById("userCost2").value;
+        var cost3 = document.getElementById("userCost3").value;
+        var cost1Amt = parseInt(cost1);
+        var cost2Amt = parseInt(cost2);
+        var cost3Amt = parseInt(cost3);
+        var total = cost1Amt + cost2Amt + cost3Amt;
+        alert("The total amount of your stay: $" + total);
+}
+</script>
+</head>
+<body>
+<h1>JavaScript Form Handling</h1>
+<form method="post"
+      action="https://webdevbasics.net/scripts/demo.php"
+      onsubmit="return validateForm();">
+<label for="userPackage1">Package Name 1:</label>
+<input type="text" name="userPackage1" id="userPackage1">
+<label for="userCost1">Cost1:</label>
+<input type="number" name="userCost1" id="userCost1">
+<input type="submit" value="Send information">
+</form>
+</body>
+</html>
