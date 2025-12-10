@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link href="pacific.css" rel="stylesheet">
   <title>Yurt Package Total Cost</title>
   <meta charset="utf-8">
 <style>
 input { display: block;
-        margin-bottom: 1em;
+        margin-bottom: 2em;
         }
 label { float: left;
         width: 5em;
@@ -22,20 +24,43 @@ function validateForm() {
         var cost1Amt = parseInt(cost1);
         var cost2Amt = parseInt(cost2);
         var cost3Amt = parseInt(cost3);
+        if(isNaN(cost1Amt))
+        cost1Amt = 0
+    if(isNaN(cost2Amt))
+        cost2Amt = 0
+    if(isNaN(cost3Amt))
+        cost3Amt = 0
         var total = cost1Amt + cost2Amt + cost3Amt;
         alert("The total amount of your stay: $" + total);
 }
 </script>
 </head>
 <body>
+    <nav>
+  <ul>
+    <li><a href="home.html">Home</a></li> 
+    <li><a href="yurts.html">Yurts</a></li>
+	  <li><a href="activities.html">Activities</a></li>
+   <li><a href="reservations.html">Reservations</a></li>
+    <li><a href="form.html">Packages Form</a></li> 
+  </ul>
+</nav>
 <h1>JavaScript Form Handling</h1>
 <form method="post"
       action="https://webdevbasics.net/scripts/demo.php"
       onsubmit="return validateForm();">
 <label for="userPackage1">Package Name 1:</label>
 <input type="text" name="userPackage1" id="userPackage1">
-<label for="userCost1">Cost1:</label>
+<label for="userCost1">Cost:</label>
 <input type="number" name="userCost1" id="userCost1">
+<label for="userPackage2">Package Name 2:</label>
+<input type="text" name="userPackage2" id="userPackage2">
+<label for="userCost2">Cost:</label>
+<input type="number" name="userCost2" id="userCost2">
+<label for="userPackage3">Package Name 3:</label>
+<input type="text" name="userPackage3" id="userPackage3">
+<label for="userCost3">Cost:</label>
+<input type="number" name="userCost3" id="userCost3">
 <input type="submit" value="Send information">
 </form>
 </body>
