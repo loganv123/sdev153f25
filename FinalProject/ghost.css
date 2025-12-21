@@ -1,0 +1,237 @@
+* {box-sizing: border-box;}
+body { background-color: #ffffff; 
+       color: #666666;
+       margin: 0;
+       font-family: Arial, Verdana, sans-serif; }
+header { background-color: #000000; 
+ padding: 1em;
+       color: #ffffff;
+       font-family: Georgia, sans-serif;
+       
+         }
+
+header a { text-decoration: none; }
+header a:link { color: #FFFFFF; }
+header a:visited { color: #FFFFFF;}
+header a:hover { color: #90C7E3; }	
+
+main { padding-left: 2em; padding-right: 2em; padding-top: 0; padding-bottom: 0; padding-left: 1em; padding-right: 1em;
+display: block;
+}
+ h1 { 
+text-align: center;
+font-size: 1.5em;
+}
+
+h2 { color: #2787c3; 
+	 font-family: Georgia, serif;}
+
+h3 { font-family: Georgia, serif;}
+
+nav { text-align: center; 
+        background-color: #FFFFFF;
+       font-size: 1.2em;
+}
+nav li {padding-top: 0.5em; padding-bottom: 0.5em; padding-left: 1em; padding-right: 1em;
+        width: 100%; border-bottom: solid 1px;}
+
+dt { color: #002171;
+	font-weight: bold; }
+
+.ghost { color: #ba2d2d;
+        font-size: 1.2em; }
+
+footer { text-align: center; background-color: #FFFFFF;
+        padding: 1em;
+         font-size: .70em;
+         font-style: italic; }
+section { 
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+}
+
+#wrapper {
+        background-color: #FFFFFF;
+
+}
+
+#abouthero { height: 300px; background: url(aboutus.jpg) no-repeat; background-size: 200% 100%;}
+#homehero { background: url(ghosts.jpg) no-repeat; height: 300px; background-size: 200% 100%; }
+#quotehero { background: url(quote.jpg) no-repeat; height: 300px; background-size: 200% 100%; }
+#conthero { background: url(contact.jpg) no-repeat; height: 300px; background-size: 200% 100%; }
+nav a { text-decoration: none; }
+nav a:link { color: #5C7FA3; }
+nav a:visited { color: #344873; }
+nav a:hover { color: #A52A2A; }
+nav ul {text-decoration: none; list-style-type: none; padding-left: 0;
+        flex-direction: column; margin: 0; }
+
+#mobile { display: inline;}
+#desktop {display: none;}
+
+table {margin: auto;
+        border: 1px solid #3399CC;
+        width: 90%;
+        border-collapse: collapse;}
+
+td, th {padding: 5px; border: 1px solid #3399CC;}
+
+td {text-align: center;}
+
+.text {text-align: left;}
+
+tr:nth-of-type(even) { background-color: #DFEDF8; }
+
+form { display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem; }
+
+input, select, textarea {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid #c9c9c9;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+form .full {
+      grid-column: span 2;
+    }
+
+label {
+      font-weight: bold;
+      margin-bottom: 0.3rem;
+      display: block;
+    }
+
+textarea {
+      resize: vertical;
+      height: 120px;
+    }
+
+#reshero {height: 300px; background: url(ocean.jpg) no-repeat;
+                background-size: 200% 100%;}
+
+video { float: right; margin: 2em;}
+
+.about {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2em;
+    }
+    .about-text {
+      flex: 1;
+      padding: 1em;
+    }
+    .about-text h2 {
+      margin-top: 0;
+    }
+
+.cta {
+      background: #000000;
+      color: #ffffff;
+      text-align: center;
+      padding: 3em 2em;
+    }
+
+.cta h2 {
+      margin-bottom: 1em;
+      color: #ffffff;
+    }
+.cta a {
+      background: #fff;
+      color: #00bcd4;
+      padding: 0.8em 1.5em;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+.cta a:hover {
+      background: #e0f7fa;
+    }
+
+.container {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .services-section {
+      padding: 3rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .service-card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .service-card h3 {
+      color: #00bcd4;
+      margin-bottom: 0.5rem;
+    }
+
+.fs-description {
+  color: var(--color-text-muted);
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+@media (min-width: 600px) {
+h1 {font-size: 2em;
+letter-spacing: 0.25em;}
+ nav ul { flex-direction: row; flex-wrap: nowrap; display: flex;
+        justify-content: space-around;
+        padding-right: 2em;
+         }
+ nav li { width: 12em;
+        border-bottom: none; }
+ section {padding-left: 2em; padding-right: 2em;
+        }
+ #flow {flex-direction: row;
+display: flex;}
+
+ #mobile {display: none;}
+ #desktop {display: inline;}
+
+#abouthero {background-size: 100% 100%;}
+#homehero {background-size: 100% 100%; }
+#quotehero {background-size: 100% 100%; }
+#conthero { background-size: 100% 100%; }
+
+form {
+        grid-template-columns: 1fr 1fr;
+      }
+button {
+        grid-column: span 1;
+      }
+	
+
+#reshero {background-size: 100% 100%;}
+
+
+ }
+@media (min-width: 1024px) {
+ body {background-image: linear-gradient(to bottom, #54dcfe 20%, #233d70 60%, #000000 100%);}
+ nav ul {padding-left: 10%; padding-right: 10%;}
+ #wrapper {margin: auto; width: 80%;}
+}	

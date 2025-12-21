@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Spirit Hunters United</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link href="ghost.css" rel="stylesheet">
+<script>
+function validateForm () {
+    const phoneNumber = document.forms[0].phone.value
+    const regex = /^\d{3}-\d{3}-\d{4}$/;
+    if (regex.test(phoneNumber)) {
+      return true;
+    } else {
+      alert(
+        "Invalid phone number: include a dash after the area code and a dash after 3 digits."
+      );
+      return false
+    }
+}
+</script>
+</head>
+<body>
+<header>
+  <h1><a href="home.html">Spirit Hunters United</a></h1>
+</header>
+<nav>
+ <ul>
+  <li><a href="home.html">Home</a></li> 
+  <li><a href="about.html">About Us</a></li>
+	<li><a href="services.html">Our Services</a></li>
+  <li><a href="quote.html">Get A Price Quote</a></li>
+  <li><a href="review.html">Client Reviews</a></li>
+  <li><a href="contact.html">Contact Us</a></li>
+</ul>
+</nav>
+<div id="quotehero"></div>
+<div class="container">
+  <h2>Get Your Custom Quote</h2>
+  <p style="text-align:center; margin-bottom:2em;">
+    Fill out the form below and we’ll get back to you with a personalized estimate.
+  </p>
+
+ <form method="post" action="https://webdevbasics.net/scripts/demo.php"
+ onsubmit="return validateForm();">
+    <div>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+    </div>
+
+    <div>
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required>
+    </div>
+
+    <div>
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" name="phone" placeholder="XXX-XXX-XXXX">
+    </div>
+
+    <div>
+      <label for="service">Service Needed</label>
+      <select id="service" name="service" required>
+        <option value="">Select a service</option>
+        <option>Comprehensive Investigations</option>
+        <option>Historical Research</option>
+        <option>Personalized detailed reports</option>
+        <option>Consultation and Recommendations</option>
+        <option>Custom Request</option>
+      </select>
+    </div>
+
+    <div class="full">
+      <label for="details">Custom Request/Extra Details</label>
+      <textarea id="details" name="details" placeholder="Describe your custom request/Add any extra information you feel is needed ..."></textarea>
+    </div>
+  <div>
+    <label for="report">Would you like a detailed personal report?</label>
+    <input type="text" id="report" name="report" placeholder="Yes or No" required>
+  </div>
+
+    <input id="mySubmit" type="submit" value="Submit">
+  </form>
+<footer>
+    Copyright &copy; 2025 Ghost Hunters United<br>
+  <a href="mailto:logan@vanhuffel.com">logan@vanhuffel.com</a>
+</footer>
+</div>
+</body>
+</html>
